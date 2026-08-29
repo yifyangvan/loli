@@ -2,7 +2,7 @@ name: 🔄 LOLI Auto CheckIn
 
 on:
   schedule:
-    - cron: '11 01 * * *'
+    - cron: '11 00 * * *'
   workflow_dispatch:
 
 permissions:
@@ -81,7 +81,7 @@ jobs:
 
       - name: 随机延迟
         run: |
-          delay=$((RANDOM % 120))
+          delay=$((RANDOM % 240))
           echo "随机延迟: ${delay}秒"
           sleep $delay
 
